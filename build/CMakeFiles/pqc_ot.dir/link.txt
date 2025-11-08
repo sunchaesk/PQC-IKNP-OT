@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pqc_ot.dir/src/main.cpp.o -o pqc_ot  /usr/lib64/libssl.so /usr/lib64/libcrypto.so 

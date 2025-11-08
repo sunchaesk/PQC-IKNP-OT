@@ -1,0 +1,5 @@
+if(EXISTS "/home/ck/Prog/C++/pqc_ot/build/pqc_ot_tests[1]_tests.cmake")
+  include("/home/ck/Prog/C++/pqc_ot/build/pqc_ot_tests[1]_tests.cmake")
+else()
+  add_test(pqc_ot_tests_NOT_BUILT pqc_ot_tests_NOT_BUILT)
+endif()
