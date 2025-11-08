@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/pqc_ot_tests.dir/src/polynomial.cpp.o"
+  "CMakeFiles/pqc_ot_tests.dir/src/polynomial.cpp.o.d"
   "CMakeFiles/pqc_ot_tests.dir/test/polynomial_test.cpp.o"
   "CMakeFiles/pqc_ot_tests.dir/test/polynomial_test.cpp.o.d"
   "pqc_ot_tests"

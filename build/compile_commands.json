@@ -7,9 +7,21 @@
 },
 {
   "directory": "/home/ck/Prog/C++/pqc_ot/build",
+  "command": "/usr/bin/c++  -I/home/ck/Prog/C++/pqc_ot/src -std=c++20 -Wall -Wextra -Wpedantic -o CMakeFiles/pqc_ot.dir/src/polynomial.cpp.o -c /home/ck/Prog/C++/pqc_ot/src/polynomial.cpp",
+  "file": "/home/ck/Prog/C++/pqc_ot/src/polynomial.cpp",
+  "output": "CMakeFiles/pqc_ot.dir/src/polynomial.cpp.o"
+},
+{
+  "directory": "/home/ck/Prog/C++/pqc_ot/build",
   "command": "/usr/bin/c++  -I/home/ck/Prog/C++/pqc_ot/src -isystem /home/ck/Prog/C++/pqc_ot/build/_deps/googletest-src/googletest/include -isystem /home/ck/Prog/C++/pqc_ot/build/_deps/googletest-src/googletest -std=c++20 -o CMakeFiles/pqc_ot_tests.dir/test/polynomial_test.cpp.o -c /home/ck/Prog/C++/pqc_ot/test/polynomial_test.cpp",
   "file": "/home/ck/Prog/C++/pqc_ot/test/polynomial_test.cpp",
   "output": "CMakeFiles/pqc_ot_tests.dir/test/polynomial_test.cpp.o"
+},
+{
+  "directory": "/home/ck/Prog/C++/pqc_ot/build",
+  "command": "/usr/bin/c++  -I/home/ck/Prog/C++/pqc_ot/src -isystem /home/ck/Prog/C++/pqc_ot/build/_deps/googletest-src/googletest/include -isystem /home/ck/Prog/C++/pqc_ot/build/_deps/googletest-src/googletest -std=c++20 -o CMakeFiles/pqc_ot_tests.dir/src/polynomial.cpp.o -c /home/ck/Prog/C++/pqc_ot/src/polynomial.cpp",
+  "file": "/home/ck/Prog/C++/pqc_ot/src/polynomial.cpp",
+  "output": "CMakeFiles/pqc_ot_tests.dir/src/polynomial.cpp.o"
 },
 {
   "directory": "/home/ck/Prog/C++/pqc_ot/build/_deps/googletest-build/googlemock",

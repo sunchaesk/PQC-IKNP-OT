@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pqc_ot.dir/src/main.cpp.o"
   "CMakeFiles/pqc_ot.dir/src/main.cpp.o.d"
+  "CMakeFiles/pqc_ot.dir/src/polynomial.cpp.o"
+  "CMakeFiles/pqc_ot.dir/src/polynomial.cpp.o.d"
   "pqc_ot"
   "pqc_ot.pdb"
 )

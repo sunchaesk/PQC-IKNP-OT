@@ -6,7 +6,7 @@
 #include <assert.h>
 #include <stdexcept>
 
-// NOTE: we can perform the unsafe addition and subtraction 
+// NOTE: we can perform the unsafe addition and subtraction
 // cuz uint64_max > q we use for Kyber schemes
 
 class Polynomial {
@@ -22,6 +22,9 @@ public:
 
             assert(schoolbook); // NTT not supported yet
         }
+
+    uint64_t get_N() const { return N; }
+    uint64_t get_q() const { return q; }
 
     Polynomial operator+(const Polynomial& other) const {
         if (N != other.N) {
@@ -90,6 +93,44 @@ public:
         return Polynomial(result_coeffs, q);
     }
 
+};
+
+class PolynomialVector {
+private:
+    std::vector<Polynomial> polynomials;
+    uint64_t k;
+    bool is_vertical;
+public:
+    PolynomialVector(std::vector<Polynomial> polys, bool is_vertical = true)
+        : polynomials(polys), k(polys.size()), is_vertical(is_vertical) {}
+
+    uint64_t size() const { return k; }
+
+    bool get_is_vertical() const { return is_vertical; }
+
+    PolynomialVector operator+(const PolynomialVector& other) const;
+    PolynomialVector operator-(const PolynomialVector& other) const;
+    Polynomial inner_product(const PolynomialVector& other) const;
+
+    const std::vector<Polynomial>& get_polynomials() const { return polynomials; }
+};
+
+class PolynomialMatrix {
+private:
+    std::vector<std::vector<Polynomial>> matrix;
+    uint64_t rows;
+    uint64_t cols;
+public:
+    PolynomialMatrix(std::vector<std::vector<Polynomial>> mat)
+        : matrix(mat), rows(mat.size()), cols(mat[0].size()) {}
+
+    uint64_t get_rows() const { return rows; }
+    uint64_t get_cols() const { return cols; }
+
+    const std::vector<std::vector<Polynomial>>& get_matrix() const { return matrix; }
+
+    PolynomialVector matrix_vector_mul(const PolynomialVector& vec) const;
+    PolynomialMatrix transpose() const;
 };
 
 #endif

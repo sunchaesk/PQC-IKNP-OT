@@ -171,12 +171,12 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/pqc_ot.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot.dir/build.make CMakeFiles/pqc_ot.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot.dir/build.make CMakeFiles/pqc_ot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ck/Prog/C++/pqc_ot/build/CMakeFiles --progress-num=31,32 "Built target pqc_ot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ck/Prog/C++/pqc_ot/build/CMakeFiles --progress-num=31,32,33 "Built target pqc_ot"
 .PHONY : CMakeFiles/pqc_ot.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pqc_ot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ck/Prog/C++/pqc_ot/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ck/Prog/C++/pqc_ot/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pqc_ot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ck/Prog/C++/pqc_ot/build/CMakeFiles 0
 .PHONY : CMakeFiles/pqc_ot.dir/rule
@@ -198,12 +198,12 @@ CMakeFiles/pqc_ot_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gt
 CMakeFiles/pqc_ot_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot_tests.dir/build.make CMakeFiles/pqc_ot_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot_tests.dir/build.make CMakeFiles/pqc_ot_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ck/Prog/C++/pqc_ot/build/CMakeFiles --progress-num=33,34 "Built target pqc_ot_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ck/Prog/C++/pqc_ot/build/CMakeFiles --progress-num=34,35,36 "Built target pqc_ot_tests"
 .PHONY : CMakeFiles/pqc_ot_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pqc_ot_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ck/Prog/C++/pqc_ot/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ck/Prog/C++/pqc_ot/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pqc_ot_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ck/Prog/C++/pqc_ot/build/CMakeFiles 0
 .PHONY : CMakeFiles/pqc_ot_tests.dir/rule

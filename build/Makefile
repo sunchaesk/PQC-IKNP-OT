@@ -299,6 +299,33 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot.dir/build.make CMakeFiles/pqc_ot.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/polynomial.o: src/polynomial.cpp.o
+.PHONY : src/polynomial.o
+
+# target to build an object file
+src/polynomial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot.dir/build.make CMakeFiles/pqc_ot.dir/src/polynomial.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot_tests.dir/build.make CMakeFiles/pqc_ot_tests.dir/src/polynomial.cpp.o
+.PHONY : src/polynomial.cpp.o
+
+src/polynomial.i: src/polynomial.cpp.i
+.PHONY : src/polynomial.i
+
+# target to preprocess a source file
+src/polynomial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot.dir/build.make CMakeFiles/pqc_ot.dir/src/polynomial.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot_tests.dir/build.make CMakeFiles/pqc_ot_tests.dir/src/polynomial.cpp.i
+.PHONY : src/polynomial.cpp.i
+
+src/polynomial.s: src/polynomial.cpp.s
+.PHONY : src/polynomial.s
+
+# target to generate assembly for a file
+src/polynomial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot.dir/build.make CMakeFiles/pqc_ot.dir/src/polynomial.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pqc_ot_tests.dir/build.make CMakeFiles/pqc_ot_tests.dir/src/polynomial.cpp.s
+.PHONY : src/polynomial.cpp.s
+
 test/polynomial_test.o: test/polynomial_test.cpp.o
 .PHONY : test/polynomial_test.o
 
@@ -347,6 +374,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/polynomial.o"
+	@echo "... src/polynomial.i"
+	@echo "... src/polynomial.s"
 	@echo "... test/polynomial_test.o"
 	@echo "... test/polynomial_test.i"
 	@echo "... test/polynomial_test.s"

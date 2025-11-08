@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ck/Prog/C++/pqc_ot/src/main.cpp" "CMakeFiles/pqc_ot.dir/src/main.cpp.o" "gcc" "CMakeFiles/pqc_ot.dir/src/main.cpp.o.d"
+  "/home/ck/Prog/C++/pqc_ot/src/polynomial.cpp" "CMakeFiles/pqc_ot.dir/src/polynomial.cpp.o" "gcc" "CMakeFiles/pqc_ot.dir/src/polynomial.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
