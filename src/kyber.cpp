@@ -97,7 +97,6 @@ Polynomial Kyber::decrypt(const Kyber::SecretKey& sk, const Kyber::Ciphertext& c
 
     Polynomial m_prime = ct.v - sr;
 
-    // Decode message: coefficients closer to 0 mod q are 0, closer to q/2 are 1
     std::vector<uint64_t> decoded_coeffs(n);
     uint64_t threshold = q / 4;  // Midpoint for rounding
 

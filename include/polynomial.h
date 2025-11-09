@@ -5,6 +5,7 @@
 #include <cstdint>
 #include <assert.h>
 #include <stdexcept>
+#include <iostream>
 
 // NOTE: we can perform the unsafe addition and subtraction
 // cuz uint64_max > q we use for Kyber schemes
@@ -25,6 +26,13 @@ public:
 
     uint64_t get_N() const { return N; }
     uint64_t get_q() const { return q; }
+
+    void print() const {
+        for (uint64_t i = 0; i < N; ++i) {
+            std::cout << coefficients[i] << " ";
+        }
+        std::cout << std::endl;
+    }
 
     Polynomial operator+(const Polynomial& other) const {
         if (N != other.N) {

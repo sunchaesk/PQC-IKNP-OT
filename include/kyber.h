@@ -11,9 +11,9 @@ private:
     using PolyVec = PolynomialVector;
     using PolyMat = PolynomialMatrix;
 
-    uint64_t n;  // Polynomial degree (typically 256)
-    uint64_t q;  // Modulus (typically 3329)
-    uint64_t k;  // Vector dimension (2, 3, or 4 for Kyber512/768/1024)
+    uint64_t n;  // 256
+    uint64_t q;  // 3329
+    uint64_t k;  // 2,3,4
 
 public:
     Kyber(uint64_t n, uint64_t q, uint64_t k) : n(n), q(q), k(k) {}
